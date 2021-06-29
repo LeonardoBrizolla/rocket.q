@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/room.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -68,7 +69,7 @@
             <div class="question-wrapper">
               <div class="question-content">
                 <div class="user">
-                  <img src="assets/avatar.svg" alt="Avatar">
+                  <img src="assets/user.svg" alt="Avatar">
                 </div>
                 <div class="question">
                   <p>Qual a diferença entre const, var e let na JavaScript?</p>
@@ -88,9 +89,94 @@
               </div>
             </div>
 
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar">
+                </div>
+                <div class="question">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde sit minima tempora consequatur culpa est labore, doloremque, reiciendis molestias provident voluptatum nemo dolores ad iste officia beatae possimus, odit mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque deleniti laboriosam ullam commodi, a nobis voluptates voluptatum ipsam aspernatur dolores totam molestias, molestiae quasi modi nam qui incidunt non est?
+                  Voluptatum doloremque, illo soluta dicta labore cumque aspernatur veritatis earum ipsam fugit dolorem eaque alias non laboriosam expedita necessitatibus omnis animi. Quas non atque perferendis, nesciunt error officiis voluptatem nobis!</p>
+                </div>
+              </div>
+
+              <div class="actions">
+                <a href="#" class="check">
+                  <img src="assets/check.svg" alt="Marcar como lida">
+                  Marcar como lida
+                </a>
+
+                <a href="#" class="delete">
+                  <img src="assets/trash.svg" alt="Excluir">
+                  Excluir
+                </a>
+              </div>
+            </div>
+
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar">
+                </div>
+                <div class="question">
+                  <p>O que é TypeScript?</p>
+                </div>
+              </div>
+
+              <div class="actions">
+                <a href="#" class="check">
+                  <img src="assets/check.svg" alt="Marcar como lida">
+                  Marcar como lida
+                </a>
+
+                <a href="#" class="delete">
+                  <img src="assets/trash.svg" alt="Excluir">
+                  Excluir
+                </a>
+              </div>
+            </div>
+
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <div class="user">
+                  <img src="assets/user.svg" alt="Avatar">
+                </div>
+                <div class="question">
+                  <p>O que é JavaScript?</p>
+                </div>
+              </div>
+
+              <div class="actions">
+                <a href="#" class="delete">
+                  <img src="assets/trash.svg" alt="Excluir">
+                  Excluir
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
       </main>
     </div>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Excluir pergunta</h2>
+
+        <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+        <form action="#">
+          <label for="password" class="sr-only">Digite sua senha admin</label>
+          <input id="password" type="password" name="password" placeholder="Digite sua senha">
+
+          <div class="buttons">
+            <div class="button grey">Cancelar</div>
+            <button class="red">Sim, excluir</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>
